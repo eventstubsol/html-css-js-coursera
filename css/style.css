@@ -80,3 +80,16 @@ main {
 .sushi .menu-item-title {
     background-color: #ffd700; /* Gold */
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .menu-item {
+        width: 48%; /* Two items per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-item {
+        width: 100%; /* One item per row on small screens */
+    }
+}

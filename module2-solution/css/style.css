@@ -1,90 +1,82 @@
-* {
-    box-sizing: border-box;
+body {
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+header {
+    background-color: #e0e0e0;
+    padding: 10px;
 }
 
-h1 {
-    text-align: center;
-    margin: 40px 0;
-    font-size: 175%;
-}
-
-.container {
-    max-width: 1200px;
+.header-content {
+    max-width: 960px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
-.row {
-    width: 100%;
+.address-bar {
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
-.section {
-    background-color: #989898;
-    border: 1px solid black;
-    margin: 15px;
-    padding: 45px 15px 15px 15px;
-    position: relative;
+.address-bar a {
+    text-decoration: none;
+    color: #333;
 }
 
-.section-title {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px 20px;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
-    font-size: 125%;
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#chicken .section-title {
-    background-color: #FFB6C1;
+.menu h1 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-#beef .section-title {
-    background-color: #CD5C5C;
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    width: 30%;
+    min-width: 250px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item-title {
+    background-color: #ccc;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-item p {
+    padding: 10px;
+    margin: 0;
+}
+
+.chicken .menu-item-title {
+    background-color: #f08080; /* LightCoral */
+}
+
+.beef .menu-item-title {
+    background-color: #b22222; /* FireBrick */
     color: white;
 }
 
-#sushi .section-title {
-    background-color: #F0E68C;
-}
-
-/* Desktop view (992px and above) */
-@media (min-width: 992px) {
-    .col-lg-4 {
-        float: left;
-        width: 33.33%;
-    }
-}
-
-/* Tablet view (between 768px and 991px) */
-@media (min-width: 768px) and (max-width: 991px) {
-    .col-md-6 {
-        float: left;
-        width: 50%;
-    }
-    .col-md-12 {
-        float: left;
-        width: 100%;
-    }
-}
-
-/* Mobile view (767px and below) */
-@media (max-width: 767px) {
-    .col-sm-12 {
-        float: left;
-        width: 100%;
-    }
-}
-
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
+.sushi .menu-item-title {
+    background-color: #ffd700; /* Gold */
 }
